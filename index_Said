@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Said Durán Cantero</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+
+        /* ========================================
+           CONFIGURACIÓN GENERAL
+        ======================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+            background: linear-gradient(
+                180deg,
+                #FFF7CC 0%,
+                #FFFDF4 40%,
+                #FFFFFF 100%
+            );
+
+            color: #4F3B1F;
+            min-height: 100vh;
+        }
+
+
+        /* ========================================
+           PRESENTACIÓN PRINCIPAL
+        ======================================== */
+
+        .hero {
+            text-align: center;
+            padding: 40px 25px;
+        }
+
+        .foto {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .12);
+        }
+
+        .nombre {
+            margin-top: 20px;
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .ubicacion {
+            margin-top: 10px;
+            color: #866A3A;
+            font-size: .95rem;
+        }
+
+        .puesto {
+            margin-top: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .tagline {
+            margin-top: 18px;
+            line-height: 1.7;
+            color: #6B5330;
+        }
+
+
+        /* ========================================
+           BOTONES DE CONTACTO
+        ======================================== */
+
+        .botones {
+            margin-top: 25px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 16px;
+            font-weight: 700;
+            text-align: center;
+            transition: .2s;
+        }
+
+        .btn:active {
+            transform: scale(.98);
+        }
+
+        .contacto {
+            background: #F8E36E;
+            color: #4F3B1F;
+        }
+
+        .linkedin {
+            background: #0A66C2;
+            color: white;
+        }
+
+        .whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .correo {
+            background: #55402D;
+            color: white;
+        }
+
+
+        /* ========================================
+           CONTENEDOR Y TARJETAS
+        ======================================== */
+
+        .container {
+            padding: 0 22px 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 24px;
+            margin-top: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+        }
+
+        .card h2 {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .card p {
+            line-height: 1.7;
+        }
+
+
+        /* ========================================
+           HABILIDADES
+        ======================================== */
+
+        .habilidades {
+            display: grid;
+            gap: 14px;
+        }
+
+        .habilidad {
+            background: #FFF7D9;
+            border-radius: 16px;
+            padding: 14px;
+        }
+
+        .habilidad strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+
+        /* ========================================
+           FRASE DESTACADA
+        ======================================== */
+
+        .quote {
+            background: #F8E36E;
+            border-radius: 18px;
+            padding: 18px;
+            font-style: italic;
+            line-height: 1.7;
+            color: #4F3B1F;
+        }
+
+
+        /* ========================================
+           CIERRE / CONECTEMOS
+        ======================================== */
+
+        .cierre {
+            background: #514536;
+            color: white;
+            text-align: center;
+            padding: 75px 7%;
+            border-radius: 24px;
+            margin-top: 25px;
+        }
+
+        .eyebrow {
+            color: #A47D38;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 17px;
+        }
+
+        .cierre .eyebrow {
+            color: #F9E7A8;
+        }
+
+        .cierre h2 {
+            font-size: 42px;
+            line-height: 1.12;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .cierre h2 span {
+            display: block;
+            color: #F9E7A8;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        .cierre p {
+            color: #E1D8C9;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .redes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .redes a {
+            font-size: 12px;
+            color: white;
+            text-decoration: none;
+            transition: .3s;
+        }
+
+        .redes a:hover {
+            color: #F9E7A8;
+        }
+
+
+        /* ========================================
+           PIE DE PÁGINA
+        ======================================== */
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #886E42;
+            font-size: .85rem;
+        }
+
+
+        /* ========================================
+           ADAPTACIÓN A CELULARES
+        ======================================== */
+
+        @media (max-width: 360px) {
+
+            .nombre {
+                font-size: 1.7rem;
+            }
+
+            .cierre {
+                padding: 55px 7%;
+            }
+
+            .cierre h2 {
+                font-size: 36px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         PRESENTACIÓN PRINCIPAL
+    ======================================== -->
+
+    <section class="hero">
+
+        <img src="avatar_Said.png" class="foto">
+
+        <h1 class="nombre">
+            Said Durán Cantero
+        </h1>
+
+        <p class="puesto">
+            Gerente D2C Centro-Pacífico en Coca-Cola FEMSA
+        </p>
+
+        <p class="tagline">
+            Lidero al equipo comercial para el canal del Hogar.
+        </p>
+
+
+        <!-- BOTONES DE CONTACTO -->
+
+        <div class="botones">
+
+            <a
+                class="btn contacto"
+                href="contacto_Said.vcf"
+                download>
+                📇 Guardar contacto
+            </a>
+
+            <a
+                class="btn whatsapp"
+                href="https://wa.me/4421469089">
+                💬 WhatsApp
+            </a>
+
+            <a
+                class="btn correo"
+                href="mailto:said.duran@kof.com">
+                ✉️ Correo
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ======================================== -->
+
+    <div class="container">
+
+
+        <!-- SOBRE MÍ -->
+
+        <div class="card">
+
+            <h2>🏆 Un poco sobre mí</h2>
+
+            <p>
+                Me considero una persona ....
+            </p>
+
+        </div>
+
+
+
+        <!-- HABILIDADES -->
+
+        <div class="card">
+
+            <h2>⭐ Lo que me caracteriza</h2>
+
+            <div class="habilidades">
+
+                <div class="habilidad">
+
+                    <strong>🔎 Cualidad 1</strong>
+
+                    ....
+
+                </div>
+
+
+                <div class="habilidad">
+
+                    <strong>⚡ Cualidad 2</strong>
+
+                    ....
+
+                </div>
+
+
+                <div class="habilidad">
+
+                    <strong>📊 Cualidad 3</strong>
+
+                    ....
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MÁS ALLÁ DEL TRABAJO -->
+
+        <div class="card">
+
+            <h2>☕ Más allá del trabajo</h2>
+
+            <p>
+                Me gusta ....
+            </p>
+
+        </div>
+
+
+
+        <!-- FRASE PERSONAL -->
+
+        <div class="quote">
+
+            "....."
+
+        </div>
+
+
+
+        <!-- ========================================
+             CIERRE / CONECTEMOS
+        ======================================== -->
+
+        <section class="cierre" id="conectemos">
+
+            <div class="eyebrow">
+                Las mejores conexiones comienzan aquí
+            </div>
+
+            <p>
+                Gracias por visitar mi espacio.
+                Espero que esta sea la primera de muchas conversaciones.
+            </p>
+
+            <div class="redes">
+
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank">
+                    LinkedIn ↗
+                </a>
+
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank">
+                    Instagram ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             PIE DE PÁGINA
+        ======================================== -->
+
+        <div class="footer">
+
+            © 2026 · Said Duran Cantero.
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
