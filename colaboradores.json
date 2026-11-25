@@ -28,5 +28,19 @@
     "hobby": "",
     "frase": "",
     "colores": {"fondo-inicio":"#FFF0D5","fondo-medio":"#FFF8ED","principal":"#B77925","texto-principal":"#FFFFFF","fondo-cierre":"#50351D","acento-cierre":"#FFD98A"}
-  }
+  },
+  "kati": {
+    "nombre": "Katia Santiago Del Rio",
+    "puesto": "Analista en Coca-Cola FEMSA",
+    "foto": "imagenes/Katia_avatar.png",
+    "tagline": "Transformo datos e información comercial en oportunidades, procesos más eficientes y mejores experiencias.",
+    "telefono": "+52291483051",
+    "correo": "katia.santiago@kof.com",
+    "linkedin": "",
+    "instagram": "",
+    "sobre": "",
+    "habilidades": [],
+    "hobby": "",
+    "frase": "",
+    "colores": {"fondo-inicio":"#FFF7CC","fondo-medio":"#FFFDF4","fondo-final":"#FFFFFF","texto":"#4F3B1F","principal":"#F8E36E","texto-principal":"#4F3B1F","secundario":"#55402D","fondo-habilidad":"#FFF7D9","fondo-cierre":"#514536","acento-cierre":"#F9E7A8","texto-cierre":"#E1D8C9"}
 }
