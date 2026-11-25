@@ -1,3 +1,4 @@
+
 const $ = id => document.getElementById(id);
 const texto = (id, valor, contenedor=id) => { $(id).textContent=valor||''; $(contenedor).hidden=!valor; };
 function enlace(id, url){const el=$(id);el.hidden=!url;if(url)el.href=url;}
@@ -16,10 +17,12 @@ async function iniciar(){
  enlace('whatsapp',/^\d{8,15}$/.test(tel)?`https://wa.me/${tel}`:'');enlace('correo',correo?`mailto:${correo}`:'');enlace('linkedin',https(p.linkedin));enlace('red-linkedin',https(p.linkedin));enlace('instagram',https(p.instagram));
  const habilidades=p.habilidades||[];$('habilidades-card').hidden=!habilidades.length;
  for(const h of habilidades){const div=document.createElement('div');div.className='habilidad';const strong=document.createElement('strong');strong.textContent=h.titulo;div.append(strong,document.createTextNode(h.descripcion||''));$('habilidades').append(div);}
+ const facts=Array.isArray(p.funFacts)?p.funFacts.filter(f=>f&&f.titulo&&f.descripcion):[];
+ $('fun-facts-card').hidden=!facts.length;
+ for(const f of facts){const row=document.createElement('div');row.className='fun-fact';const emoji=document.createElement('span');emoji.className='fun-emoji';emoji.textContent=f.emoji||'✨';emoji.setAttribute('aria-hidden','true');const content=document.createElement('div');const title=document.createElement('strong');title.textContent=f.titulo;const desc=document.createElement('p');desc.textContent=f.descripcion;content.append(title,desc);row.append(emoji,content);$('fun-facts').append(row);}
  const vcf=['BEGIN:VCARD','VERSION:3.0',`FN:${escaparVCF(p.nombre)}`,`N:${escaparVCF(p.nombre)};;;;`,...(tel?[`TEL;TYPE=CELL:+${tel}`]:[]),...(correo?[`EMAIL;TYPE=WORK:${escaparVCF(correo)}`]:[]),...(p.puesto?[`TITLE:${escaparVCF(p.puesto)}`]:[]),'END:VCARD',''].join('\r\n');
  $('contacto').href=URL.createObjectURL(new Blob([vcf],{type:'text/vcard;charset=utf-8'}));$('contacto').download=`contacto-${id}.vcf`;
  const url=new URL(location.pathname,location.origin);url.searchParams.set('id',id);
- try{new QRCode($('qr'),{text:url.href,width:192,height:192,correctLevel:QRCode.CorrectLevel.M});}catch{$('qr-error').hidden=false;}
  $('compartir').onclick=async()=>{try{if(navigator.share){await navigator.share({title:p.nombre,text:'Mi tarjeta de presentación digital',url:url.href});return;}}catch(e){if(e.name==='AbortError')return;}try{await navigator.clipboard.writeText(url.href);$('compartir').textContent='¡Enlace copiado!';}catch{window.prompt('Copia el enlace de mi perfil:',url.href);}};
  $('estado').hidden=true;$('perfil').hidden=false;
 }
