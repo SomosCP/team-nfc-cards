@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
-  
-  <title>Perfil profesional</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Perfil profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js">
+    </script>
   </head>
+  <body>
+    <p id="estado" role="status">Cargando perfil…</p>
+    <main id="perfil" hidden>
 
-<body>
-<p id="estado" role="status">Cargando perfil…</p>
-  <main id="perfil" hidden>
-  <section class="hero">
+<section class="hero">
   <img id="foto" class="foto" alt="">
   <h1 id="nombre" class="nombre"></h1>
   <p id="puesto" class="puesto"></p>
@@ -25,34 +25,36 @@
     <a id="linkedin" class="btn linkedin">LinkedIn</a>
     <button id="compartir" class="btn secundario">Compartir perfil</button>
   </div>
-  </section>
+</section>
 <div class="container">
-<section class="card" id="sobre-card">
-  <h2>🏆 Un poco sobre mí</h2>
-  <p id="sobre"></p>
+  <section class="card" id="sobre-card">
+    <h2>🏆 Un poco sobre mí</h2>
+    <p id="sobre"></p>
   </section>
   <section class="card" id="habilidades-card">
-  <h2>⭐ Lo que me caracteriza</h2>
-  <div id="habilidades" class="habilidades"></div>
+    <h2>⭐ Lo que me caracteriza</h2>
+    <div id="habilidades" class="habilidades"></div>
   </section>
   <section class="card" id="hobby-card">
-  <h2>☕ Más allá del trabajo</h2>
-  <p id="hobby"></p>
+    <h2>☕ Más allá del trabajo</h2>
+    <p id="hobby"></p>
   </section>
-  
-  <blockquote id="frase" class="quote"></blockquote>
+  <section class="card" id="fun-facts-card" hidden>
+    <h2>✨ Un poco más de mí</h2>
+    <p class="fun-intro">Porque no todo es trabajo...</p>
+    <div id="fun-facts" class="fun-facts">
+    </div></section><blockquote id="frase" class="quote"></blockquote>
   <section class="cierre">
-  <div class="eyebrow">Las mejores conexiones comienzan aquí</div>
-  <p>Gracias por visitar mi espacio. Espero que esta sea la primera de muchas conversaciones.</p>
-  <div class="redes">
-  <a id="red-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-  <a id="instagram" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-  </div>
+    <div class="eyebrow">Las mejores conexiones comienzan aquí</div>
+    <p>Gracias por visitar mi espacio. Espero que esta sea la primera de muchas conversaciones.</p>
+    <div class="redes">
+      <a id="red-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a id="instagram" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+    </div>
   </section>
-  
   <footer class="footer" id="footer">
   </footer>
   </div>
-  </main>
-  </body>
-  </html>
+</main>
+</body>
+</html>
