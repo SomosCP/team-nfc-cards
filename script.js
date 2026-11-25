@@ -6,7 +6,7 @@ function https(url){try{const u=new URL(url);return u.protocol==='https:'?u.href
 const escaparVCF = v => String(v||'').replace(/\\/g,'\\\\').replace(/\r?\n/g,'\\n').replace(/;/g,'\\;').replace(/,/g,'\\,');
 async function iniciar(){
  const id=new URLSearchParams(location.search).get('id');
- const respuesta=await fetch('colaboradores.json');if(!respuesta.ok)throw Error('No se pudo cargar la información.');
+ const respuesta=await fetch('./colaboradores.json', { cache: 'no-store' });if(!respuesta.ok)throw Error('No se pudo cargar la información.');
  const datos=await respuesta.json();if(!id||!Object.hasOwn(datos,id))throw Error('Perfil no encontrado. Verifica el enlace de tu tarjeta.');
  const p=datos[id];document.title=p.nombre;
  const permitidos=['fondo-inicio','fondo-medio','fondo-final','texto','principal','texto-principal','secundario','fondo-habilidad','fondo-cierre','acento-cierre','texto-cierre'];
