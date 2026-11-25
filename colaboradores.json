@@ -1,0 +1,32 @@
+{
+  "andy": {
+    "nombre": "Andy Crisostomo García",
+    "puesto": "Analista en Coca-Cola FEMSA",
+    "foto": "imagenes/avatar_Andy.png",
+    "tagline": "Transformo datos e información comercial en oportunidades, procesos más eficientes y mejores experiencias.",
+    "telefono": "",
+    "correo": "",
+    "linkedin": "",
+    "instagram": "",
+    "sobre": "",
+    "habilidades": [],
+    "hobby": "",
+    "frase": "",
+    "colores": {"principal":"#D4AF37","fondo-cierre":"#514536","acento-cierre":"#FFD700"}
+  },
+  "said": {
+    "nombre": "Said Durán Cantero",
+    "puesto": "",
+    "foto": "imagenes/avatar_Said.png",
+    "tagline": "",
+    "telefono": "",
+    "correo": "",
+    "linkedin": "",
+    "instagram": "",
+    "sobre": "",
+    "habilidades": [],
+    "hobby": "",
+    "frase": "",
+    "colores": {"fondo-inicio":"#FFF0D5","fondo-medio":"#FFF8ED","principal":"#B77925","texto-principal":"#FFFFFF","fondo-cierre":"#50351D","acento-cierre":"#FFD98A"}
+  }
+}
