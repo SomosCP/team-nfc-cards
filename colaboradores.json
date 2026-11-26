@@ -62,7 +62,7 @@
   "marce": {
     "nombre": "Marcela Hernandez Trujillo",
     "puesto": "Ejecutiva Consumo Directo Puebla Foráneo en Coca-Cola FEMSA",
-    "foto": "imagenes/Andy_avatar.png",
+    "foto": "imagenes/Marce_avatar.png",
     "tagline": "Lidero al equipo comercial para el canal del Hogar.",
     "telefono": "+522381197325",
     "correo": "marcela.hernandez@kof.com",
@@ -91,7 +91,7 @@
   "rocio": {
     "nombre": "Rocio Yamilet Mendez Sanabria",
     "puesto": "Ejecutivo Vending en Coca-Cola FEMSA",
-    "foto": "imagenes/Andy_avatar.png",
+    "foto": "imagenes/Rocio_avatar.png",
     "tagline": "Desarrollo y gestiono el canal Vending, asegurando una operación eficiente y experiencias de compra accesibles para nuestros consumidores.",
     "telefono": "+522225498141",
     "correo": "rocio.mendez@kof.com",
@@ -106,7 +106,7 @@
   "luis": {
     "nombre": "Jose Luis Sastre Salaus",
     "puesto": "Supervisor Prospección D2C en Coca-Cola FEMSA",
-    "foto": "imagenes/Andy_avatar.png",
+    "foto": "imagenes/Luis_avatar.png",
     "tagline": "Lidero la prospección de nuevos clientes y oportunidades de negocio, fortaleciendo la expansión y presencia del canal D2C en la región.",
     "telefono": "+522461291068",
     "correo": "jose.sastre@kof.com",
@@ -116,6 +116,6 @@
     "habilidades": [],
     "hobby": "",
     "frase": "",
-    "colores": {"fondo-inicio":"#EDD0D4","fondo-medio":"#FAF3F4","fondo-final":"#FFFFFF","texto":"#191919","principal":"#D6A0A6","texto-principal":"#191919","secundario":"#404040","fondo-habilidad":"#F5E5E7","fondo-cierre":"#191919","acento-cierre":"#D6A0A6","texto-cierre":"#EDD0D4"}
+    "colores": {"fondo-inicio":"#E5E5E5","fondo-medio":"#F5F5F5","fondo-final":"#FFFFFF","texto":"#111111","principal":"#FF3347","texto-principal":"#111111","secundario":"#262626","fondo-habilidad":"#F0F0F0","fondo-cierre":"#0D0D0D","acento-cierre":"#FF3347","texto-cierre":"#E5E5E5"}
   }
 }
