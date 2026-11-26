@@ -87,8 +87,7 @@
     "habilidades": [],
     "hobby": "",
     "frase": "",
-    "colores": {"fondo-inicio":"#EDD0D4","fondo-medio":"#FAF3F4","fondo-final":"#FFFFFF","texto":"#191919","principal":"#D6A0A6","texto-principal":"#191919","secundario":"#404040","fondo-habilidad":"#F5E5E7","fondo-cierre":"#191919","acento-cierre":"#D6A0A6","texto-cierre":"#EDD0D4"}
-  },
+    "colores": {"fondo-inicio":"#FFD0D3","fondo-medio":"#FFF0F1","fondo-final":"#FFFFFF","texto":"#111111","principal":"#E60026","texto-principal":"#FFFFFF","secundario":"#111111","fondo-habilidad":"#FFE0E3","fondo-cierre":"#C8102E","acento-cierre":"#FFFFFF","texto-cierre":"#FFFFFF"}  },
   "rocio": {
     "nombre": "Rocio Yamilet Mendez Sanabria",
     "puesto": "Ejecutivo Vending en Coca-Cola FEMSA",
