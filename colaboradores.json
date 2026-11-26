@@ -118,5 +118,5 @@
     "hobby": "",
     "frase": "",
     "colores": {"fondo-inicio":"#EDD0D4","fondo-medio":"#FAF3F4","fondo-final":"#FFFFFF","texto":"#191919","principal":"#D6A0A6","texto-principal":"#191919","secundario":"#404040","fondo-habilidad":"#F5E5E7","fondo-cierre":"#191919","acento-cierre":"#D6A0A6","texto-cierre":"#EDD0D4"}
-  },
+  }
 }
