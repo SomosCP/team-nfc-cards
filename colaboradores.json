@@ -43,27 +43,5 @@
     "hobby": "",
     "frase": "Me gusta pensar que siempre podemos hacer algo mejor, diferente y con un propósito",
     "colores": {"fondo-inicio":"#FFF7CC","fondo-medio":"#FFFDF4","fondo-final":"#FFFFFF","texto":"#4F3B1F","principal":"#F8E36E","texto-principal":"#4F3B1F","secundario":"#55402D","fondo-habilidad":"#FFF7D9","fondo-cierre":"#514536","acento-cierre":"#F9E7A8","texto-cierre":"#E1D8C9"}
-    "funFacts": [
-    {
-        "emoji": "☕",
-        "titulo": "Mi combustible diario",
-        "descripcion": "Un buen café para empezar el día."
-    },
-    {
-        "emoji": "🎧",
-        "titulo": "Mi playlist nunca falla",
-        "descripcion": "Rock de los 80 y 90."
-    },
-    {
-        "emoji": "🌮",
-        "titulo": "Mi debilidad",
-        "descripcion": "Los tacos al pastor."
-    },
-    {
-        "emoji": "🎯",
-        "titulo": "Un dato curioso",
-        "descripcion": "Me encanta aprender cosas nuevas."
-    }
-]
   }
 }
